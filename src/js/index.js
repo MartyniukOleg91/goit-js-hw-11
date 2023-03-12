@@ -35,6 +35,7 @@ btnSearch.addEventListener('click', e => {
           btnLoadMore.style.display = 'block';
         }
         gallerySimpleLightbox.refresh();
+  
       }
     });
   }
