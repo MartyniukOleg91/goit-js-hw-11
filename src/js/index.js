@@ -61,6 +61,7 @@ btnLoadMore.addEventListener('click', () => {
       if (foundData.hits.length >= 40) {
         btnLoadMore.style.display = 'block';
       }
+      gallerySimpleLightbox.refresh();
       
     }
   });
