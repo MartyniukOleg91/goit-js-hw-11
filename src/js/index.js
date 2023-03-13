@@ -37,7 +37,7 @@ const validateMarkup = async () => {
       Notify.info("We're sorry, but you've reached the end of search results.");
     }
 
-    if (variables.page === 1 && res.hits.length > 0) {
+    if (variables.page === 1 && res.hits.length >= 40) {
       loadMoreBtn.style.display = 'block';
       Notify.success(`Hoorey! We found ${res.totalHits} images`);
     }
